@@ -24,6 +24,10 @@
 		C33375B11746AAD000AF4F9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33375891746AACF00AF4F9C /* Foundation.framework */; };
 		C33375B91746AAD000AF4F9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C33375B71746AAD000AF4F9C /* InfoPlist.strings */; };
 		C33375BC1746AAD000AF4F9C /* TestNavBarOffBy20Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C33375BB1746AAD000AF4F9C /* TestNavBarOffBy20Tests.m */; };
+		C33375C71746AE5900AF4F9C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33375C61746AE5900AF4F9C /* MainViewController.m */; };
+		C33375CA1746AE7300AF4F9C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33375C91746AE7300AF4F9C /* MenuViewController.m */; };
+		C33375CC1746B05100AF4F9C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33375CB1746B05100AF4F9C /* QuartzCore.framework */; };
+		C33375CE1746B0FE00AF4F9C /* menuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C33375CD1746B0FE00AF4F9C /* menuButton@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,12 @@
 		C33375B81746AAD000AF4F9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C33375BA1746AAD000AF4F9C /* TestNavBarOffBy20Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNavBarOffBy20Tests.h; sourceTree = "<group>"; };
 		C33375BB1746AAD000AF4F9C /* TestNavBarOffBy20Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNavBarOffBy20Tests.m; sourceTree = "<group>"; };
+		C33375C51746AE5900AF4F9C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C33375C61746AE5900AF4F9C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C33375C81746AE7300AF4F9C /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		C33375C91746AE7300AF4F9C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		C33375CB1746B05100AF4F9C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C33375CD1746B0FE00AF4F9C /* menuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33375CC1746B05100AF4F9C /* QuartzCore.framework in Frameworks */,
 				C33375881746AACF00AF4F9C /* UIKit.framework in Frameworks */,
 				C333758A1746AACF00AF4F9C /* Foundation.framework in Frameworks */,
 				C333758C1746AACF00AF4F9C /* CoreGraphics.framework in Frameworks */,
@@ -108,6 +119,7 @@
 		C33375861746AACF00AF4F9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C33375CB1746B05100AF4F9C /* QuartzCore.framework */,
 				C33375871746AACF00AF4F9C /* UIKit.framework */,
 				C33375891746AACF00AF4F9C /* Foundation.framework */,
 				C333758B1746AACF00AF4F9C /* CoreGraphics.framework */,
@@ -125,6 +137,11 @@
 				C33375A21746AAD000AF4F9C /* MainStoryboard_iPad.storyboard */,
 				C33375A51746AAD000AF4F9C /* DDSViewController.h */,
 				C33375A61746AAD000AF4F9C /* DDSViewController.m */,
+				C33375C51746AE5900AF4F9C /* MainViewController.h */,
+				C33375C61746AE5900AF4F9C /* MainViewController.m */,
+				C33375C81746AE7300AF4F9C /* MenuViewController.h */,
+				C33375C91746AE7300AF4F9C /* MenuViewController.m */,
+				C33375CD1746B0FE00AF4F9C /* menuButton@2x.png */,
 				C333758E1746AACF00AF4F9C /* Supporting Files */,
 			);
 			path = TestNavBarOffBy20;
@@ -241,6 +258,7 @@
 				C333759E1746AAD000AF4F9C /* Default-568h@2x.png in Resources */,
 				C33375A11746AAD000AF4F9C /* MainStoryboard_iPhone.storyboard in Resources */,
 				C33375A41746AAD000AF4F9C /* MainStoryboard_iPad.storyboard in Resources */,
+				C33375CE1746B0FE00AF4F9C /* menuButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +296,8 @@
 				C33375941746AACF00AF4F9C /* main.m in Sources */,
 				C33375981746AACF00AF4F9C /* DDSAppDelegate.m in Sources */,
 				C33375A71746AAD000AF4F9C /* DDSViewController.m in Sources */,
+				C33375C71746AE5900AF4F9C /* MainViewController.m in Sources */,
+				C33375CA1746AE7300AF4F9C /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
